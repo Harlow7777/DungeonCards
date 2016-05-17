@@ -1,0 +1,21 @@
+Class list:
+	Popup when notifications change
+	Bold when selected(show submenu of class description while selected)
+	Add to global variable
+	Add class specials
+Add help text button:
+	popup window with scrollable guide to the game
+Battle phase:
+	+1 to speed/lives(popup choice)
+	Add boss specials(to OP?)
+		
+Add 3 card hand support:
+	South Panel showing current 3 cards
+	Click 1 to use, discard
+	Add new card with draw at the beginning of each turn
+
+Add character movement on card draw
+
+Add restart button:
+	Are you sure?
+
