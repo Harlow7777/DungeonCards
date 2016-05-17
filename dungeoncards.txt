@@ -1,0 +1,93 @@
+DUNGEON CARDS
+A single player dungeon crawling card game that can be played with a standard deck of cards, a pen, and a piece of (grid)paper
+
+Board Setup:
+	Grid paper or board
+	Deck of 52 cards + 2 jokers
+	Starting space on one edge of board, 2 jokers placed wherever connected to a single square
+		Jokers represent as Exit/Pit
+
+Character:
+	Place character marker on start(miniature, piece of paper, coin, etc.)
+	Character starts at level 1
+	Character starting stats:
+		10 lives
+		0 speed(for each point in speed add 1 to the amount of spaces when calculating moving)
+	Alternate stats(Draw your Stats):
+		Draw a card for each stat
+		Redraw Aces and Face cards
+	Pick Character Class:
+		Ninja - Active Reflex: If you encounter a wall, turn around and finish your movement in the opposite direction you were initially moving
+		Athlete - Controlled Dash: After defeating a boss, draw a card, move that number of squares in any direction of your choice, discard that card
+		Soldier - Strong Will: If you are defeated by a boss, you can make a saving draw which replaces the last draw you made in combat
+		Tank - Damage Sponge: You start with 5 extra lives
+		Rogue - Critical hit: you may draw 3 cards during combat instead of 1 once per boss, use the highest of the 3
+		Swordsman - Guard Break: On a tie, you do 1 damage to the Boss
+		Multiplayer classes:
+		Mage - Spells: Instead of moving, a Mage can take that turn to cast a spell
+			Reversal: For 1 turn suit directions are reversed(up = down, left = right)
+			Fortune Telling: Each player gets to discard a single card and redraw
+			Haste: Each player gets +1 speed on their next turn
+			**Good Luck: Every player gets to draw an extra card this turn
+		Healer(For multiplayer) - Healing Touch: Character in adjacent space on start or end of turn heals 1 life
+		
+Each turn:
+	**Players start with a hand of 3 cards, redraw face cards
+	Draw card:
+		**Select a card to use
+		Move character number of spaces = value of the card
+		Ace value = 1
+		In the direction indicated by the suit:
+			Diamonds - Up
+			Spades - Down
+			Hearts - Left
+			Clubs - Right
+		If you encounter a wall(edge of board) movement stops
+		Card is placed in the discard pile
+	Combat:
+		**If you draw a face card you must immediately lay it down and fight the boss
+		Face cards = Bosses:
+			Jack - 3 lives
+			Queen - 4 lives
+				Second Wind: On defeat the Queen redraws her final card, replacing the first card she drew
+			King - 5 lives
+				Royal Barrage: On a King's final life, he will start by drawing 3 cards
+				The player draws 3 and damage is taken 3 seperate times for each matchup
+		*Once you defeat a boss, it will not get shuffled back into the deck
+		On a boss encounter:
+			*In multiplayer, only players adjacent to the character in combat may help fight(each player draws a card for every boss draw)
+			Battle stops all movement, until the player beats the boss or dies trying
+			Shuffle discard pile into the deck
+			Boss draws a card
+			You draw a card
+			The owner of the lower valued card takes 1 damage
+			Place both cards in discard pile
+			*Face cards drawn during combat are immediately put into discard pile and the player redraws
+			*Ties end in no damage, cards are placed in the discard pile
+			At the end of combat, shuffle the discard pile into the deck
+		Victory:
+			Once a boss has been defeated a player can put 1 point of experience into one stat	
+			The player also gains 1 level
+	*If at any point the deck runs out of cards, shuffle the discard pile and place as new deck
+
+Winning:
+	A player escapes the dungeon if the Joker representing the Exit is landed on
+	A player falls and dies, ending the game, if the Joker representing the Pit is landed on
+	On escape note each players level and stats, add to Hall of Fame
+	*In multiplayer:
+		Once a player reaches the Exit, the remainder of the team can finish the game, counting it as a team victory
+		Or the remainder of the team can continue playing until each character has either died, fallen into a pit, or escaped
+	
+Game mods:
+	More difficult: 
+		Add more pages to make for a larger map
+		Draw walls on the map that stop or redirect movement
+		Place more pits
+	Less difficult: 
+		Add a d20 roll to the end of each turn, on 19-20 the player finds a potion that heals 1 life, reroll 1's
+		Add more players to form an exploring party
+		Place more exit points
+	Use Aces to represent treasure(?)
+	
+**Rules for playing with a 3 card hand
+*Side Notes
